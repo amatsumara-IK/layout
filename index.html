@@ -51,7 +51,7 @@
             const inputCode = document.getElementById("inputCode").value;
 
             const replacements = [
-                { start: "$imp", end: "$end", template: `
+                { start: "<strong>$imp</strong>", end: "<strong>$end</strong>", template: `
 <div class="color-container container-flex blue-container">
     <div class="container-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -68,13 +68,13 @@
     </div>
 </div>
 `},
-                { start: "$term", end: "$end", template: '<div class="term"></div>' },
-                { start: "$case", end: "$end", template: `
+                { start: "<strong>$term</strong>", end: "<strong>$end</strong>", template: '<div class="term"></div>' },
+                { start: "<strong>$case</strong>", end: "<strong>$end</strong>", template: `
 <div class="block-example">
     <div class="example-title">Пример</div>
 </div>
 `},
-                { start: "$biblio", end: "$end", template: `
+                { start: "<strong>$biblio</strong>", end: "<strong>$end</strong>", template: `
 <div class="color-container container-flex orange-container">
     <div class="container-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
